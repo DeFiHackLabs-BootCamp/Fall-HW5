@@ -40,9 +40,9 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Problem 1
-        command: cd hw && forge test --match-contract GameTest
+        command: cd hw && forge test --match-test test1_write_here
         timeout: 30
-        max-score: 80
+        max-score: 50
 
     ## Modify Problem 2 Configuration
     - name: Problem 2
@@ -50,9 +50,9 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Problem 2
-        command: cd hw && forge test --match-contract SimpleVaultTest
+        command: cd hw && forge test --match-test test2_write_here
         timeout: 30
-        max-score: 20
+        max-score: 50
 
     ## Add More Problem Below
     ## Problem 3 ...
